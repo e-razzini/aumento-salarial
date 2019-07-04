@@ -4,6 +4,7 @@ public class Funcionario {
  
     private String nome;
     private String sobreNome;
+    private String cargo;
     private double salario;
     private int codCargo;
     private int tempServico;
@@ -52,7 +53,7 @@ public class Funcionario {
         }
             
         
-        this.codCargo = codCargo;
+        this.cargo = aux;
     }
 
     public int getTempServico() {
