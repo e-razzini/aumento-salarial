@@ -9,6 +9,24 @@ public class AumentoSalarial {
     public AumentoSalarial(Funcionario func) {
         this.func = func;
     }
+    
+    public String getCargo(){
+        
+        int codCargo =this.func.getCodCargo();
+        String descricao ="";
+        if (codCargo == 101) {
+           descricao ="Gerente" ;
+        } else if (codCargo == 102) {
+          descricao ="Engenheiro" ;
+        } else if (codCargo == 103) {
+            descricao ="Tecnico" ;
+        } else {
+            descricao ="não cadastrado" ;
+        }
+        
+        return descricao;
+        
+    }
 
     public double calcularAumento() {
         

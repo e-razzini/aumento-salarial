@@ -36,26 +36,21 @@ public class Funcionario {
     public int getCodCargo() {
         return this.codCargo;
     }
-
+    
     public void setCodCargo(int codCargo) {
-        String aux ="";
-        
-        switch (this.codCargo){
-            case 101:
-                aux ="Gerente";
-                break;
-            case 102:
-                aux ="Engenheiro";
-                break;
-            case 103:
-            aux ="Techenico";
-                
-        }
-            
-        
-        this.cargo = aux;
+        this.codCargo = codCargo;
     }
 
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+    
+
+    
+    public String getCargo(){
+        return this.cargo;
+    }
+    
     public int getTempServico() {
         return this. tempServico;
     }
